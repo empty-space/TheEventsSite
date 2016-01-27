@@ -24,9 +24,22 @@ namespace TheEventsSite.Models.Entities
         public string ManagerName{ get; set; }
         public string ManagerPhone { get; set; }
         /// <summary>
-        /// Lecture, webinar, service..
+        /// Class, party, service..
         /// </summary>
-        public EventFormat EventType{ get; set; }
+        public EventTypes EventType{ get; set; }
     }
-    public enum
+    public enum EventTypes
+    {
+        Party,
+        Class,
+        Conference,
+        Seminar,
+        Expo,
+        Festival,
+        Performance,
+        //Networking,
+        Game,
+        //Attraction
+        
+    }
 }
